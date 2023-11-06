@@ -1,0 +1,12 @@
+.product-info {
+  display: flex;
+  }
+  
+  .product-info > * {
+  margin-right: 10px;
+  }
+
+  .img {
+    width: 100px;
+    height: auto;
+  }
