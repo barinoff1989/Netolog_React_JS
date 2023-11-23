@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 export const ConverterColour = (props) => {
   const{item} = props
-  //let TextError = 'Ошибка';
   function isValidHex(hex) {  
     let ishex = /^#[0-9A-F]+$/.test(hex) && hex.length === 7;
     if (hex == '') 
@@ -26,13 +25,9 @@ export const ConverterColour = (props) => {
     if (value.length >= 7) {
       setName(value);
     } else {
-      return;//setName('pink');
+      return;
     }
   };
-
- // const TextError = (e) => {if }
-  //      <input style={{ width: '50%', height: '50%' }} type='text'/>
- // <input></input>
  if (isValidHex(name.toUpperCase()) == 0) {
   return (    
   <div style={{backgroundColor: 'Pink', height: '1000px'}} >

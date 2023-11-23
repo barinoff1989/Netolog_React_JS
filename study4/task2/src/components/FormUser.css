@@ -1,0 +1,62 @@
+input[type="date"] {
+    display: inline-block;
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+    }
+    
+    input[type="number"] {
+    display: inline-block;
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    }
+    button {
+        background-color: transparent;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        transition: 0.5s;
+        }
+
+ .buttonx {
+    background-color: transparent;
+    color: black;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 0px solid black;
+    transition: 0.5s;
+    }
+        
+button:hover {
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    th, td {
+    text-align: left;
+    padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
