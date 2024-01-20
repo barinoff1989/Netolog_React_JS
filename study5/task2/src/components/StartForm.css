@@ -1,0 +1,46 @@
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Стили для основного содержимого (main) */
+  main {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Стили для подвала (footer) */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  .centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .block {
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .blue-link {
+    color: blue;
+    font-weight: bold;
+  }
