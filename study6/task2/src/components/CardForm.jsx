@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import classes from './CardForm.css'
 
 export const CardForm = (props) => {
-  const{mess,itemnun,delClock} = props
-  const delxClock = () => {
+  const{mess,itemnun,delItem} = props
+  const delxItem = () => {
     
-    delClock({itemnun});
+    delItem({itemnun});
   };
 
   return (
@@ -13,7 +13,7 @@ export const CardForm = (props) => {
         <div className="containercl">
            <div className="containerStyle">
             <textarea className="textareaStyle" value={mess} readOnly/>
-            <button className="circle-button" onClick={delxClock}>x</button>
+            <button className="circle-button" onClick={delxItem}>x</button>
            </div>
 
         </div>

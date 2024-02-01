@@ -8,6 +8,8 @@ import {CardForm} from './CardForm';
 export const FormUser = (props) => {
 const{item} = props
 
+const [loading, setLoading] = useState(true);
+
 const [inputValue, setInputValue] =
 useState({
   mess: ''
@@ -20,9 +22,11 @@ const getFetch = () => {
   .then(response => response.json())
   .then(data => {
     setDisplayText(data)
+    setLoading(false);
   })
   .catch(error => {
     console.error('Ошибка при получении данных:', error);
+    setLoading(false);
   });
 }
 
@@ -108,11 +112,15 @@ return (
   <div>
     <h1 className="notes">Notes</h1>
     <button className="button" onClick={handleButtonUpdate}>upd</button> 
+    {loading ? (
+        <p>Загрузка данных...</p>
+      ) : (
           <div className="container">
           {myArray.map((item, index) => (
-            <CardForm key={index} mess = {item.content} itemnun = {item.id} delClock={delItem}/>
+            <CardForm key={index} mess = {item.content} itemnun = {item.id} delItem={delItem}/>
           ))}
         </div>
+      )}
         <div className="containerStyle1">
       <textarea className="textareaStyle" placeholder="Напишите текст здесь" name = "mess"  value={inputValue.mess} onChange={handleInputChange} />
       <button className="buttonStyle" onClick={handleButtonClick}>Сохранить</button>
